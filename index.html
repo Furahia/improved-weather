@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- font aweome icons -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.12/css/weather-icons.min.css">
+
+    <title>WEATHER</title>
+</head>
+<body>
+
+    <div class="hero">
+        <!-- nav-bar -->
+
+
+        
+        <div class="nav-bar">
+            <!-- <nav class="navbar navbar-expand-lg">
+              <div class="container-fluid">
+                
+                <a class="navbar-brand" href="#"> <i class="wi wi-stars"></i> <strong>Local</strong>Weather</a>
+                <span id="date" class="leas"> 12:00 PM | August 30, 2023</span>
+             weather section -->
+             <!-- <div class="input-group mb-2">
+                <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
+              </div>
+
+            </nav> -->
+            
+            <nav class="navbar navbar-expand-lg  nav-bar">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"> <i class="wi wi-stars"></i> <strong>Local</strong>Weather</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <form class="d-flex" role="search" id="city-form">
+                        <input class="form-control me-2" id="city-name" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-secondary" type="submit">Search</button>
+                      </form>
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                      
+                        <span id="date" class="leas"> 12:00 PM | August 30, 2023</span>
+                      </li>
+                     
+                    </ul>
+                    
+                  </div>
+                </div>
+              </nav>
+
+          </div>
+
+          <div class="container">
+            <div class="row">
+                <div class=" col-10 weather ms-auto">
+                    <div class="weather-head">
+                        <h1 id="location" class="text-center display.4"> Nairobi, Kenya </h1>
+                        <div class="row">
+                            <div id="description" class="col-6 text-center">
+                                <img src="" id="icon" alt="">
+                                <p id="desc">thunderstorm</p>
+
+                            </div>
+                            <div class="col-6 text-center">
+                               <span id="temperature"></span>
+                                <i id="icon-thermometer" class="wi wi-thermometer"></i>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                    <!-- weather body section -->
+                    <div class="weather-body">
+                        <div class="row">
+                            <div class="humidity col-4 text-center">
+                                <i class="wi wi-raindrops"></i>
+                                <span>Humidity</span>
+                            </div>
+                            <div class="wind col-4 text-center">
+                                <i class="wi wi-strong-wind"></i>
+                                <span>Wind Speed</span>
+                            </div>
+                            <div class="wind-degree col-4 text-center">
+                                <i class="wi wi-direction-up-right"></i>
+                                <span>Wind Degree</span>
+                            </div>
+                        </div>
+
+                        <!-- weather body data -->
+                        <div class="row">
+                            <div class="humidity-data col-4 text-center">
+                                75%
+
+                            </div>
+                            <div class="wind-data col-4 text-center">
+                                3.4m/h
+
+                            </div>
+                            <div class="wind-data-dg col-4 text-center">
+                                90&deg
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+         </div>
+          </div>
+
+    
+<script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+</body>
+</html>
